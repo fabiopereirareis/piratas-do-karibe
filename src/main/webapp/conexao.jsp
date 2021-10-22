@@ -7,7 +7,13 @@
 <%@ page import="java.net.URISyntaxException"%>
 <%
 private static Connection getConnection() throws URISyntaxException, SQLException {
-String dbUrl = System.getenv("JDBC_DATABASE_URL");
-return DriverManager.getConnection(dbUrl);
+    URI dbUri = new URI(System.getenv("DATABASE_URL"));
+
+    String username = dbUri.getUserInfo().split(":")[0];
+    String password = dbUri.getUserInfo().split(":")[1];
+    String dbUrl = "jdbc:postgresql://" + dbUri.getHost() + ':' + dbUri.getPort() + dbUri.getPath();
+
+    return DriverManager.getConnection(dbUrl, username, password);
 }
+
 %>
