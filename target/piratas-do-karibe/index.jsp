@@ -5,8 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ include file="conexao.jsp" %>
-<%--<%@ include file="connectionDB.jsp" %>--%>
+<%@ include file="connectionDB.jsp"%>
 
 
 <!DOCTYPE html>
@@ -71,9 +70,13 @@
 
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 
-               
+               <% 
+               if(con != null){
+               out.print("ok");
+                   }
+               %>
             
-                %>
+                
             </div>
         </header>
         

@@ -8,10 +8,10 @@
     Connection con = null;
     PreparedStatement pstm = null;
     try {
-        String server = "localhost:5432";
-        String dataBase = "db_ppk";
-        String user = "developer";
-        String password = "dev";
+        String server = "ec2-52-3-239-135.compute-1.amazonaws.com:5432";
+        String dataBase = "d4u91vrmkkd1b3";
+        String user = "edqjwhnucpowtn";
+        String password = "748616b5bbaee58184fc533c856dc3a3d9958239632e8d84d449711c07198fa7";
         String driverName = "org.postgresql.Driver";
         Class.forName(driverName);
 
