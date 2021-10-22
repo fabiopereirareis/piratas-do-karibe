@@ -15,11 +15,12 @@
            String zipCod = request.getParameter("zipcod");
            String user = request.getParameter("user");
            String password = request.getParameter("password");
+           String retryPassword = request.getParameter("retry_password");
 //               response.sendRedirect("index.jsp?name=" + name);
             
-//               if(location.equals("af")){
-//                   response.sendRedirect("index.jsp?location=" + "ok" );
-//                    
+               if(password != retryPassword){
+//                   response.sendRedirect("cadastro.html");
+               }
 //               }else{
 //                    
 //               }
@@ -30,24 +31,24 @@
 %>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <%
-        out.print(firstName);
-        out.print(lastName);
-        out.print(email);
-        out.print(district);
-        out.print(address);
-        out.print(number);
-        out.print(state);
-        out.print(zipCod);
-        out.print(user);
-        out.print(password);
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <%
+            out.print(firstName);
+            out.print(lastName);
+            out.print(email);
+            out.print(district);
+            out.print(address);
+            out.print(number);
+            out.print(state);
+            out.print(zipCod);
+            out.print(user);
+            out.print(password);
         %>
-</body>
+    </body>
 </html>
