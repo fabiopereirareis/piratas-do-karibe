@@ -5,6 +5,7 @@
 --%>
 <%@ page import="java.sql.*"%>
 <%@ page import="java.net.URISyntaxException"%>
+<%@ page import="java.net.URI"%>;
 <%
 private static Connection getConnection() throws URISyntaxException, SQLException {
     URI dbUri = new URI(System.getenv("DATABASE_URL"));
