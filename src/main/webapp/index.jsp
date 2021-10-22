@@ -1,12 +1,19 @@
-<!doctype html>
+<%-- 
+    Document   : solteiro
+    Created on : 21 de out de 2021, 20:53:08
+    Author     : fabinho
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
         <meta name="generator" content="Hugo 0.88.1">
-        <title>Pricing example · Bootstrap v5.1</title>
+        <title>Pricing example Â· Bootstrap v5.1</title>
 
         <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/pricing/">
         <!-- Bootstrap core CSS -->
@@ -31,7 +38,7 @@
 
 
         <!-- Custom styles for this template -->
-        <link href="pricing.css" rel="stylesheet">
+        <link href="css/pricing.css" rel="stylesheet">
     </head>
     <body>
 
@@ -60,7 +67,7 @@
 
             <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
                 <h1 class="display-4 fw-normal">Planos</h1>
-                <p class="fs-5 text-muted">Seja muito bem vindo(a) a nossa pagina de planos mensais, aqui você irá encontrar o melhor jeito de comer sua pizza.</p>
+                <p class="fs-5 text-muted">Seja muito bem vindo(a) a nossa pagina de planos mensais, aqui vocÃª irÃ¡ encontrar o melhor jeito de comer sua pizza.</p>
             </div>
         </header>
         <main>
@@ -71,14 +78,16 @@
                             <h4 class="my-0 fw-normal">Solteiro</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">R$100<small class="text-muted fw-light">/mês</small></h1>
+                            <h1 class="card-title pricing-card-title">R$100<small class="text-muted fw-light">/mÃªs</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>4 pizzas por mês</li>
-                                <li>2 refrigerantes por mês</li>
+                                <li>4 pizzas por mÃªs</li>
+                                <li>2 refrigerantes por mÃªs</li>
                                 <li>Entrega gratuita</li>
                                 <li>Cancele quando quiser</li>
                             </ul>
+                            <a href="solteiro.jsp">
                             <button type="button" class="w-100 btn btn-lg btn-outline-primary">Quero esse plano</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -88,14 +97,16 @@
                             <h4 class="my-0 fw-normal">Casal</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">R$ 150<small class="text-muted fw-light">/mês</small></h1>
+                            <h1 class="card-title pricing-card-title">R$ 150<small class="text-muted fw-light">/mÃªs</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>6 pizzas por mês</li>
-                                <li>4 refrigerantes por mês</li>
+                                <li>6 pizzas por mÃªs</li>
+                                <li>4 refrigerantes por mÃªs</li>
                                 <li>Entrega gratuita</li>
                                 <li>Cancele quando quiser</li>
                             </ul>
+                            <a href="casal.jsp">
                             <button type="button" class="w-100 btn btn-lg btn-primary">Gostamos desse</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -105,10 +116,10 @@
                             <h4 class="my-0 fw-normal">Familia</h4>
                         </div>
                         <div class="card-body">
-                            <h1 class="card-title pricing-card-title">R$ 200<small class="text-muted fw-light">/mês</small></h1>
+                            <h1 class="card-title pricing-card-title">R$ 200<small class="text-muted fw-light">/mÃªs</small></h1>
                             <ul class="list-unstyled mt-3 mb-4">
-                                <li>8 pizzas por mês</li>
-                                <li>8 refrigerantes por mês</li>
+                                <li>8 pizzas por mÃªs</li>
+                                <li>8 refrigerantes por mÃªs</li>
                                 <li>Entrega gratuita</li>
                                 <li>Cancele quando quiser</li>
                             </ul>
@@ -118,7 +129,7 @@
                 </div>
             </div>
 
-            <h2 class="display-6 text-center mb-4">Comparação dos planos</h2>
+            <h2 class="display-6 text-center mb-4">ComparaÃ§Ã£o dos planos</h2>
 
             <div class="table-responsive">
                 <table class="table text-center">
@@ -153,7 +164,7 @@
                             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
                         </tr>
                         <tr>
-                            <th scope="row" class="text-start">Promoções exclusivas</th>
+                            <th scope="row" class="text-start">PromoÃ§Ãµes exclusivas</th>
                             <td></td>
                             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
                             <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
@@ -169,7 +180,7 @@
             <div class="row">
                 <div class="col-12 col-md">
                     <img class="mb-2" src="assets/brand/bootstrap-logo.svg" alt="" width="24" height="19">
-                    <small class="d-block mb-3 text-muted">&copy; 2017?2021</small>
+                    <small class="d-block mb-3 text-muted">&copy; 2017â€“2021</small>
                 </div>
                 <div class="col-6 col-md">
                     <h5>Features</h5>
