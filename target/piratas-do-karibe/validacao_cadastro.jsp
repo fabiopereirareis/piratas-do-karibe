@@ -57,8 +57,8 @@
      try {
 
          //Comando SQL para inserir um novo registro no BD:
-         sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,password,'user')"+
-                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+         sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,password,user)"+
+                "VALUES (?, ?, ?, ?, ?, ?, ?, '?', '?');";
                  pstm = con.prepareStatement(sql);
                  pstm.setString(1,firstName);
                  pstm.setString(2,lastName);
