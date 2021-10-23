@@ -67,7 +67,7 @@
                  pstm.setString(3,request.getParameter("email"));
                  pstm.setString(4,request.getParameter("district"));
                  pstm.setString(5,request.getParameter("address"));
-                 pstm.setString(6,"teste");
+                 pstm.setString(6,request.getParameter("state"));
                  pstm.setString(7,request.getParameter("zipcod"));
                  pstm.setString(8,request.getParameter("password"));
                  pstm.setString(9,request.getParameter("user"));
