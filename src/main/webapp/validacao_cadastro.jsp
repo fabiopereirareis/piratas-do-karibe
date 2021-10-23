@@ -5,7 +5,7 @@
 --%>
 
 <%--<%@ include file="connectionDBLoc.jsp"%>--%>
-<%@ include file="connectionDBWeb.jsp.jsp"%>
+<%@ include file="connectionDBWeb.jsp"%>
 <%
              request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
