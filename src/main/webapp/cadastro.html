@@ -126,7 +126,7 @@ and open the template in the editor.
               class="form-control"
               id="validationCustomUsername"
               aria-describedby="inputGroupPrepend"
-              name="user"
+              name="user_form"
               required
             />
             <div class="invalid-feedback">Please choose a username.</div>
@@ -191,9 +191,9 @@ and open the template in the editor.
         </div>
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">Estado</label>
-          <select class="form-select" id="validationCustom04" required>
-            <option selected disabled value="">Choose...</option>
-            <option>teste01</option>
+          <select class="form-select" id="validationCustom04" name="state"required>
+            <option selected disabled >Choose...</option>
+            <option value="teste01">teste01</option>
             <option>teste02</option>
           </select>
           <div class="invalid-feedback">Please select a valid state.</div>

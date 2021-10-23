@@ -4,13 +4,14 @@
     Author     : fabinho
 --%>
 
-<%@ include file="connectionDB.jsp"%>
+<%--<%@ include file="connectionDBLoc.jsp"%>--%>
+<%@ include file="connectionDBWeb.jsp.jsp"%>
 <%
              request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
            String firstName = request.getParameter("firstname");
            String lastName = request.getParameter("lastname");
-           String user = request.getParameter("user");
+           String userForm = request.getParameter("user_form");
            String password = request.getParameter("password");
            String email = request.getParameter("email");
            String address = request.getParameter("address");
@@ -49,7 +50,7 @@
             out.print(address);
             out.print(state);
             out.print(zipCod);
-            out.print(user);
+            out.print(userForm);
             out.print(password);
         %>
 
@@ -58,7 +59,7 @@
      try {
 
          //Comando SQL para inserir um novo registro no BD:
-         sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,password,user)"+
+         sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,passwd,user_name)"+
                 "VALUES (?,?,?,?,?,?,?,?,?);";
                  pstm = con.prepareStatement(sql);
                  pstm.setString(1,firstName);
@@ -69,7 +70,7 @@
                  pstm.setString(6,state);
                  pstm.setString(7,zipCod);
                  pstm.setString(8,password);
-                 pstm.setString(9,user);
+                 pstm.setString(9,userForm);
          //chamamos o método para gravar dados no banco
          int retorno = pstm.executeUpdate();
          if (retorno > 0) {

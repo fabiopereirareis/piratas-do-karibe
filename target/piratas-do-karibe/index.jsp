@@ -5,7 +5,8 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ include file="connectionDB.jsp"%>
+<%--<%@ include file="connectionDBLoc.jsp"%>--%>
+<%@ include file="connectionDBWeb.jsp.jsp"%>
 
 <!DOCTYPE html>
 <html lang="en">
