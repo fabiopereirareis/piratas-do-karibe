@@ -7,20 +7,19 @@
 <%
            String firstName = request.getParameter("firstname");
            String lastName = request.getParameter("lastname");
-           String email = request.getParameter("email");
-           String district = request.getParameter("district");
-           String address = request.getParameter("address");
-           String number = request.getParameter("number");
-           String state = request.getParameter("state");
-           String zipCod = request.getParameter("zipcod");
            String user = request.getParameter("user");
            String password = request.getParameter("password");
-           String retryPassword = request.getParameter("retry_password");
+           String email = request.getParameter("email");
+           String address = request.getParameter("address");
+           String district = request.getParameter("district");
+           String city = request.getParameter("city");
+           String state = request.getParameter("state");
+           String zipCod = request.getParameter("zipcod");
 //               response.sendRedirect("index.jsp?name=" + name);
-            
-               if(password != retryPassword){
+//            
+//               if(password != retryPassword){
 //                   response.sendRedirect("cadastro.html");
-               }
+//               }
 //               }else{
 //                    
 //               }
@@ -44,7 +43,6 @@
             out.print(email);
             out.print(district);
             out.print(address);
-            out.print(number);
             out.print(state);
             out.print(zipCod);
             out.print(user);

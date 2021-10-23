@@ -83,32 +83,41 @@ and open the template in the editor.
       </header>
 
       <!--form-->
-      <form class="row g-3 needs-validation" novalidate>
-        <div class="col-md-4">
-          <label for="validationCustom01" class="form-label">First name</label>
+      <form
+        class="row g-3 needs-validation"
+        action="validacao_cadastro.jsp"
+        method="post"
+        novalidate
+      >
+        <div class="col-md-6">
+          <label for="validationCustom01" class="form-label">Nome</label>
           <input
             type="text"
             class="form-control"
             id="validationCustom01"
             value="Mark"
+            name="firstname"
             required
           />
           <div class="valid-feedback">Looks good!</div>
         </div>
-        <div class="col-md-4">
-          <label for="validationCustom02" class="form-label">Last name</label>
+
+        <div class="col-md-6">
+          <label for="validationCustom02" class="form-label">Sobrenome</label>
           <input
             type="text"
             class="form-control"
             id="validationCustom02"
             value="Otto"
+            name="lastname"
             required
           />
           <div class="valid-feedback">Looks good!</div>
         </div>
+
         <div class="col-md-4">
           <label for="validationCustomUsername" class="form-label"
-            >Username</label
+            >Usuário</label
           >
           <div class="input-group has-validation">
             <span class="input-group-text" id="inputGroupPrepend">@</span>
@@ -117,23 +126,71 @@ and open the template in the editor.
               class="form-control"
               id="validationCustomUsername"
               aria-describedby="inputGroupPrepend"
+              name="user"
               required
             />
             <div class="invalid-feedback">Please choose a username.</div>
           </div>
         </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Senha</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value="Mark"
+            name="password"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">E-mail</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom01"
+            value="Mark"
+            name="email"
+            required
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
         <div class="col-md-6">
-          <label for="validationCustom03" class="form-label">City</label>
+          <label for="validationCustom03" class="form-label">Logradouro</label>
           <input
             type="text"
             class="form-control"
             id="validationCustom03"
+            name="address"
+            required
+          />
+          <div class="invalid-feedback">Please provide a valid city.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Bairro</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom03"
+            name="district"
+            required
+          />
+          <div class="invalid-feedback">Please provide a valid city.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">Cidade</label>
+          <input
+            type="text"
+            class="form-control"
+            id="validationCustom03"
+            name="city"
             required
           />
           <div class="invalid-feedback">Please provide a valid city.</div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom04" class="form-label">State</label>
+          <label for="validationCustom04" class="form-label">Estado</label>
           <select class="form-select" id="validationCustom04" required>
             <option selected disabled value="">Choose...</option>
             <option>...</option>
@@ -141,11 +198,12 @@ and open the template in the editor.
           <div class="invalid-feedback">Please select a valid state.</div>
         </div>
         <div class="col-md-3">
-          <label for="validationCustom05" class="form-label">Zip</label>
+          <label for="validationCustom05" class="form-label">Cep</label>
           <input
             type="text"
             class="form-control"
             id="validationCustom05"
+            name="zipcod"
             required
           />
           <div class="invalid-feedback">Please provide a valid zip.</div>
