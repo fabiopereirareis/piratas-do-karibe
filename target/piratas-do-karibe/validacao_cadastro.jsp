@@ -6,6 +6,8 @@
 
 <%@ include file="connectionDB.jsp"%>
 <%
+             request.setCharacterEncoding("UTF-8");
+            response.setCharacterEncoding("UTF-8");
            String firstName = request.getParameter("firstname");
            String lastName = request.getParameter("lastname");
            String user = request.getParameter("user");
@@ -49,13 +51,9 @@
             out.print(user);
             out.print(password);
         %>
-        
-        <%            
-     request.setCharacterEncoding("UTF-8");
-     response.setCharacterEncoding("UTF-8");
-     String sql = "";
-     PreparedStatement pstm = null;
 
+        <%            
+     String sql = "";
      try {
 
          //Comando SQL para inserir um novo registro no BD:
@@ -87,6 +85,6 @@
          if(con!=null)con.close();                
      }
         %>
-     
+
     </body>
 </html>
