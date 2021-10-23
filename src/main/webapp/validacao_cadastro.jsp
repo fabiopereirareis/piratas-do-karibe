@@ -16,7 +16,8 @@
            String address = request.getParameter("address");
            String district = request.getParameter("district");
 //           String city = request.getParameter("city");
-           String state = request.getParameter("state");
+//           String state = request.getParameter("state");
+           String state = "teste";
            String zipCod = request.getParameter("zipcod");
 //               response.sendRedirect("index.jsp?name=" + name);
 //            
