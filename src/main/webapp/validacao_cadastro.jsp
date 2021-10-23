@@ -9,17 +9,17 @@
 <%
              request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
-           String firstName = request.getParameter("firstname");
-           String lastName = request.getParameter("lastname");
-           String userForm = request.getParameter("user_form");
-           String password = request.getParameter("password");
-           String email = request.getParameter("email");
-           String address = request.getParameter("address");
-           String district = request.getParameter("district");
+//           String firstName = request.getParameter("firstname");
+//           String lastName = request.getParameter("lastname");
+//           String userForm = request.getParameter("user_form");
+//           String password = request.getParameter("password");
+//           String email = request.getParameter("email");
+//           String address = request.getParameter("address");
+//           String district = request.getParameter("district");
 //           String city = request.getParameter("city");
 //           String state = request.getParameter("state");
-           String state = "teste";
-           String zipCod = request.getParameter("zipcod");
+//           String state = "teste";
+//           String zipCod = request.getParameter("zipcod");
 //               response.sendRedirect("index.jsp?name=" + name);
 //            
 //               if(password != retryPassword){
@@ -43,15 +43,15 @@
     </head>
     <body>
         <%
-            out.print(firstName);
-            out.print(lastName);
-            out.print(email);
-            out.print(district);
-            out.print(address);
-            out.print(state);
-            out.print(zipCod);
-            out.print(userForm);
-            out.print(password);
+//            out.print(firstName);
+//            out.print(lastName);
+//            out.print(email);
+//            out.print(district);
+//            out.print(address);
+//            out.print(state);
+//            out.print(zipCod);
+//            out.print(userForm);
+//            out.print(password);
         %>
 
         <%            
@@ -62,15 +62,15 @@
          sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,passwd,user_name)"+
                 "VALUES (?,?,?,?,?,?,?,?,?);";
                  pstm = con.prepareStatement(sql);
-                 pstm.setString(1,firstName);
-                 pstm.setString(2,lastName);
-                 pstm.setString(3,email);
-                 pstm.setString(4,district);
-                 pstm.setString(5,address);
-                 pstm.setString(6,state);
-                 pstm.setString(7,zipCod);
-                 pstm.setString(8,password);
-                 pstm.setString(9,userForm);
+                 pstm.setString(1,request.getParameter("firstname"));
+                 pstm.setString(2,request.getParameter("lastname"));
+                 pstm.setString(3,request.getParameter("email"));
+                 pstm.setString(4,request.getParameter("district"));
+                 pstm.setString(5,request.getParameter("address"));
+                 pstm.setString(6,"teste");
+                 pstm.setString(7,request.getParameter("zipcod"));
+                 pstm.setString(8,request.getParameter("password"));
+                 pstm.setString(9,request.getParameter("user_form"));
          //chamamos o método para gravar dados no banco
          int retorno = pstm.executeUpdate();
          if (retorno > 0) {
