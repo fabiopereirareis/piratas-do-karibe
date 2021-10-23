@@ -7,6 +7,7 @@
 <%
     Connection con = null;
     PreparedStatement pstm = null;
+    ResultSet rs = null;
     try {
         String server = "ec2-52-3-239-135.compute-1.amazonaws.com:5432";
         String dataBase = "d4u91vrmkkd1b3";

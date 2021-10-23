@@ -4,6 +4,7 @@
     Author     : fabinho
 --%>
 
+<%@ include file="connectionDB.jsp"%>
 <%
            String firstName = request.getParameter("firstname");
            String lastName = request.getParameter("lastname");
@@ -12,7 +13,7 @@
            String email = request.getParameter("email");
            String address = request.getParameter("address");
            String district = request.getParameter("district");
-           String city = request.getParameter("city");
+//           String city = request.getParameter("city");
            String state = request.getParameter("state");
            String zipCod = request.getParameter("zipcod");
 //               response.sendRedirect("index.jsp?name=" + name);
@@ -48,5 +49,44 @@
             out.print(user);
             out.print(password);
         %>
+        
+        <%            
+     request.setCharacterEncoding("UTF-8");
+     response.setCharacterEncoding("UTF-8");
+     String sql = "";
+     PreparedStatement pstm = null;
+
+     try {
+
+         //Comando SQL para inserir um novo registro no BD:
+         sql = "INSERT INTO public.tb_users (first_name,last_name,email,district,address,state,zip_cod,password,user"+
+                "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?);";
+                 pstm = con.prepareStatement(sql);
+                 pstm.setString(1,firstName);
+                 pstm.setString(2,lastName);
+                 pstm.setString(3,email);
+                 pstm.setString(4,district);
+                 pstm.setString(5,address);
+                 pstm.setString(6,state);
+                 pstm.setString(7,zipCod);
+                 pstm.setString(8,password);
+                 pstm.setString(9,user);
+         //chamamos o método para gravar dados no banco
+         int retorno = pstm.executeUpdate();
+         if (retorno > 0) {
+             out.print("<p>Dados gravados com sucesso</p>");
+         } else {
+             out.print("<p>Erro. Tente novamente.</p>");
+         }
+     } catch (Exception ex) {
+         out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Não repita o RGM." + "<br/>Comando SQL: " + ex.getMessage() + "</p>");
+//                out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Não repita o RGM." + "<br/>Comando SQL: " + sql + "</p>");
+     }
+     finally { //parte finally, sempre será executada
+         if(pstm!=null)pstm.close();
+         if(con!=null)con.close();                
+     }
+        %>
+     
     </body>
 </html>

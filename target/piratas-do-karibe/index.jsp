@@ -5,7 +5,7 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%--<%@ include file="connectionDB.jsp"%>--%>
+<%@ include file="connectionDB.jsp"%>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -149,7 +149,9 @@
         </footer>
     </div>
 
-
+    <%
+    if(con!=null)out.print("ok");
+    %>
 
 </body>
 </html>
