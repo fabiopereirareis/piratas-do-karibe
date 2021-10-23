@@ -4,8 +4,8 @@
     Author     : fabinho
 --%>
 
-<%--<%@ include file="connectionDBLoc.jsp"%>--%>
-<%@ include file="connectionDBWeb.jsp"%> 
+<%@ include file="connectionDBLoc.jsp"%>
+<%--<%@ include file="connectionDBWeb.jsp"%>--%> 
 <%
              request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
@@ -75,6 +75,9 @@
          int retorno = pstm.executeUpdate();
          if (retorno > 0) {
              out.print("<p>Dados gravados com sucesso</p>");
+             %>
+             <h2>teste</h2>
+             <%
          } else {
              out.print("<p>Erro. Tente novamente.</p>");
          }
