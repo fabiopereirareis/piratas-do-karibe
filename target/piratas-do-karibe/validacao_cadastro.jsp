@@ -70,7 +70,7 @@
                  pstm.setString(6,"teste");
                  pstm.setString(7,request.getParameter("zipcod"));
                  pstm.setString(8,request.getParameter("password"));
-                 pstm.setString(9,request.getParameter("user_form"));
+                 pstm.setString(9,request.getParameter("user"));
          //chamamos o método para gravar dados no banco
          int retorno = pstm.executeUpdate();
          if (retorno > 0) {
