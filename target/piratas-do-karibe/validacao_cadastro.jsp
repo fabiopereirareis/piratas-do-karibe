@@ -4,8 +4,8 @@
     Author     : fabinho
 --%>
 
-<%@ include file="connectionDBLoc.jsp"%>
-<%--<%@ include file="connectionDBWeb.jsp"%>--%> 
+<%--<%@ include file="connectionDBLoc.jsp"%>--%>
+<%@ include file="connectionDBWeb.jsp"%> 
 <%
              request.setCharacterEncoding("UTF-8");
             response.setCharacterEncoding("UTF-8");
@@ -40,6 +40,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <script src="js/bootstrap.js"></script>
     </head>
     <body>
         <%
@@ -71,24 +74,26 @@
                  pstm.setString(7,request.getParameter("zipcod"));
                  pstm.setString(8,request.getParameter("password"));
                  pstm.setString(9,request.getParameter("user"));
-         //chamamos o método para gravar dados no banco
+         //chamamos o mï¿½todo para gravar dados no banco
          int retorno = pstm.executeUpdate();
          if (retorno > 0) {
              out.print("<p>Dados gravados com sucesso</p>");
-             %>
-             <h2>teste</h2>
-             <%
-         } else {
-             out.print("<p>Erro. Tente novamente.</p>");
-         }
-     } catch (Exception ex) {
-         out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Não repita o RGM." + "<br/>Comando SQL: " + ex.getMessage() + "</p>");
-//                out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Não repita o RGM." + "<br/>Comando SQL: " + sql + "</p>");
-     }
-     finally { //parte finally, sempre será executada
-         if(pstm!=null)pstm.close();
-         if(con!=null)con.close();                
-     }
+        %>
+        <script>
+            alert("Cadastro efetuado com sucesso !");
+        </script>
+
+        } else {
+        out.print("<p>Erro. Tente novamente.</p>");
+        }
+        } catch (Exception ex) {
+        out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Nï¿½o repita o RGM." + "<br/>Comando SQL: " + ex.getMessage() + "</p>");
+        //                out.print("<p>Algo errado inserindo no Banco de dados. Digite notas com ponto. Nï¿½o repita o RGM." + "<br/>Comando SQL: " + sql + "</p>");
+        }
+        finally { //parte finally, sempre serï¿½ executada
+        if(pstm!=null)pstm.close();
+        if(con!=null)con.close();                
+        }
         %>
 
     </body>

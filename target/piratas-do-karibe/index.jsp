@@ -20,6 +20,7 @@
 
         <!-- Bootstrap core CSS -->
         <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
         <script src="js/bootstrap.js"></script>
 
         <style>
@@ -63,50 +64,51 @@
                     <a class="me-3 py-2 text-dark text-decoration-none" href="planos.jsp">Planos</a>
                     <a class="me-3 py-2 text-dark text-decoration-none" href="#">Empresa</a>
                     <a class="me-3 py-2 text-dark text-decoration-none" href="#">Suporte</a>
-                    <a class="py-2 text-dark text-decoration-none" href="#">Contato</a>
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#">Menu</a>
+                    <a class="py-2 text-dark text-decoration-none" href="cadastro.html">Cadastro</a>
                 </nav>
             </div>
 
-                <!--cards-->
-                <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="assets/img/pizza_01.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+            <!--cards-->
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/pizza_01.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="assets/img/pizza_02.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card h-100">
-                            <img src="assets/img/pizza_03.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer">
-                                <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
                         </div>
                     </div>
                 </div>
-                <!--cards-->
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/pizza_02.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="assets/img/pizza_03.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--cards-->
         </header>
 
 
