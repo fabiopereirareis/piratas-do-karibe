@@ -28,7 +28,7 @@ and open the template in the editor.
     <!-- Custom styles for this template -->
     <link href="css/pricing.css" rel="stylesheet" />
 
-    <title>TODO supply a title</title>
+    <title>Cadastro</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -67,16 +67,25 @@ and open the template in the editor.
             <span class="fs-4">Piratas do Karibe</span>
           </a>
           <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-              >Produtos</a
+            <a
+              class="me-3 py-2 text-dark text-decoration-none"
+              href="planos.jsp"
+              >Planos</a
             >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+            <a
+              class="me-3 py-2 text-dark text-decoration-none"
+              href="empresa.html"
               >Empresa</a
             >
-            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-              >Suporte</a
+            <!--                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+                       >Suporte</a
+                    >
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+                       >Menu</a
+                    >-->
+            <a class="py-2 text-dark text-decoration-none" href="cadastro.html"
+              >Cadastro</a
             >
-            <a class="py-2 text-dark text-decoration-none" href="#">Contato</a>
           </nav>
         </div>
       </header>
@@ -94,11 +103,12 @@ and open the template in the editor.
             type="text"
             class="form-control"
             id="validationCustom01"
-            value="Mark"
+            value=""
             name="firstname"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
 
         <div class="col-md-6">
@@ -107,11 +117,12 @@ and open the template in the editor.
             type="text"
             class="form-control"
             id="validationCustom02"
-            value="Otto"
+            value=""
             name="lastname"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
 
         <div class="col-md-4">
@@ -128,32 +139,35 @@ and open the template in the editor.
               name="user"
               required
             />
-            <div class="invalid-feedback">Please choose a username.</div>
+            <div class="valid-feedback">Campo preenchido corretamente</div>
+            <div class="invalid-feedback">Por favor preencha o campo</div>
           </div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">Senha</label>
           <input
-            type="text"
+            type="password"
             class="form-control"
             id="validationCustom01"
-            value="Mark"
+            value=""
             name="password"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
         <div class="col-md-4">
           <label for="validationCustom01" class="form-label">E-mail</label>
           <input
-            type="text"
+            type="email"
             class="form-control"
             id="validationCustom01"
-            value="Mark"
+            value=""
             name="email"
             required
           />
-          <div class="valid-feedback">Looks good!</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">Logradouro</label>
@@ -164,7 +178,8 @@ and open the template in the editor.
             name="address"
             required
           />
-          <div class="invalid-feedback">Please provide a valid city.</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">Bairro</label>
@@ -175,7 +190,8 @@ and open the template in the editor.
             name="district"
             required
           />
-          <div class="invalid-feedback">Please provide a valid city.</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
         <div class="col-md-6">
           <label for="validationCustom03" class="form-label">Cidade</label>
@@ -186,12 +202,18 @@ and open the template in the editor.
             name="city"
             required
           />
-          <div class="invalid-feedback">Please provide a valid city.</div>
+          <div class="valid-feedback">Campo preenchido corretamente</div>
+          <div class="invalid-feedback">Por favor preencha o campo</div>
         </div>
         <div class="col-md-3">
           <label for="validationCustom04" class="form-label">Estado</label>
-          <select class="form-select" id="validationCustom04" name="state"required>
-            <option selected disabled >Choose...</option>
+          <select
+            class="form-select"
+            id="validationCustom04"
+            name="state"
+            required
+          >
+            <option selected disabled>Selecione...</option>
             <option value="Acre (AC)">Acre (AC)</option>
             <option value="Amapá (AP)">Amapá (AP)</option>
             <option value="Amazonas (AM)">Amazonas (AM)</option>
@@ -202,7 +224,9 @@ and open the template in the editor.
             <option value="Goiás (GO)">Goiás (GO)</option>
             <option value="Maranhão (MA)">Maranhão (MA)</option>
             <option value="Mato Grosso (MT)">Mato Grosso (MT)</option>
-            <option value="Mato Grosso do Sul (MS)">Mato Grosso do Sul (MS)</option>
+            <option value="Mato Grosso do Sul (MS)">
+              Mato Grosso do Sul (MS)
+            </option>
             <option value="Minas Gerais (MG)">Minas Gerais (MG)</option>
             <option value="Pará (PA)">Pará (PA)</option>
             <option value="Paraíba (PB)">Paraíba (PB)</option>
@@ -210,8 +234,12 @@ and open the template in the editor.
             <option value="Pernambuco (PE)">Pernambuco (PE)</option>
             <option value="Piauí (PI)">Piauí (PI)</option>
             <option value="Rio de Janeiro (RJ)">Rio de Janeiro (RJ)</option>
-            <option value="Rio Grande do Norte (RN)">Rio Grande do Norte (RN)</option>
-            <option value="Rio Grande do Sul (RS)">Rio Grande do Sul (RS)</option>
+            <option value="Rio Grande do Norte (RN)">
+              Rio Grande do Norte (RN)
+            </option>
+            <option value="Rio Grande do Sul (RS)">
+              Rio Grande do Sul (RS)
+            </option>
             <option value="Rondônia (RO)">Rondônia (RO)</option>
             <option value="Roraima (RR)">Roraima (RR)</option>
             <option value="Santa Catarina (SC)">Santa Catarina (SC)</option>
@@ -242,10 +270,10 @@ and open the template in the editor.
               required
             />
             <label class="form-check-label" for="invalidCheck">
-              Agree to terms and conditions
+              Aceito os termos.
             </label>
             <div class="invalid-feedback">
-              You must agree before submitting.
+              Para se cadastrar você deve aceitar os termos.
             </div>
           </div>
         </div>
