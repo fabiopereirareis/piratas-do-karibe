@@ -134,7 +134,7 @@
                   <li>Entrega gratuita</li>
                   <li>Cancele quando quiser</li>
                 </ul>
-                <a href="solteiro.jsp">
+                <a href="#">
                   <button
                     type="button"
                     class="w-100 btn btn-lg btn-outline-primary"
@@ -160,7 +160,7 @@
                   <li>Entrega gratuita</li>
                   <li>Cancele quando quiser</li>
                 </ul>
-                <a href="casal.jsp">
+                <a href="#">
                   <button type="button" class="w-100 btn btn-lg btn-primary">
                     Gostamos desse
                   </button>

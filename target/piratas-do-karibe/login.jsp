@@ -1,5 +1,8 @@
-<%-- Document : planos Created on : 21 de out de 2021, 21:23:39 Author : fabinho
---%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%-- Document : solteiro Created on : 21 de out de 2021, 20:53:08 Author :
+fabinho --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%--<%@include file="connectionDBLoc.jsp"%>--%> 
+<%@include file="connectionDBWeb.jsp" %>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,19 +14,15 @@
       content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
     />
     <meta name="generator" content="Hugo 0.88.1" />
-    <title>Planos</title>
+    <title>Pizzaria Piratas do Karibe</title>
 
-    <link
-      rel="canonical"
-      href="https://getbootstrap.com/docs/5.1/examples/pricing/"
-    />
     <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
     />
+    <script src="js/bootstrap.js"></script>
 
     <style>
       .bd-placeholder-img {
@@ -109,174 +108,83 @@
           </nav>
         </div>
 
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h1 class="display-4 fw-normal">Planos</h1>
-          <p class="fs-5 text-muted">
-            Seja muito bem vindo(a) a nossa pagina de planos mensais, aqui você
-            irá encontrar o melhor jeito de comer sua pizza.
-          </p>
+        <!--cards-->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-75">
+              <img
+                src="assets/img/pizza_01.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Pizzaria Temática</h5>
+                <p class="card-text">
+                  Para atender as necessidades de todo o público que são adeptos
+                  de uma boa massa e gostam de experimentar algo novo. Como uma
+                  boa pizzaria com tema temático, num estilo de Piratas algo
+                  totalmente diferente de uma pizzaria habitual com a decoração
+                  colonial e medieval.
+                </p>
+              </div>
+              <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="assets/img/franquia.jpg"
+                class="card-img-top"
+                alt="Foto de Arturo Anez no Pexels"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Rede de Franquias</h5>
+                <p class="card-text">
+                  Além da sede própria teremos também as redes dos franqueados,
+                  que contará com todos os requintes da sede própria. Contando
+                  com um ambiente familiar, músicas ao vivo os nossos garçons
+                  com trajes de piratas e buscando o cliente até a mesa para
+                  dançar, ambiente rústico; pizzas saborosas além de outras
+                  especiarias, uma rodada de Rum como cortesia da casa além da
+                  sua imaginação que vai fazer uma viagem aos tempos medievais
+                  dos piratas algo nunca visto antes e inimaginável uma magia
+                  pura.
+                </p>
+              </div>
+              <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-75">
+              <img
+                src="assets/img/planos.jpg"
+                class="card-img-top"
+                alt="Foto de Tima Miroshnichenko no Pexels"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Planos mensais</h5>
+                <p class="card-text">
+                  Como grande diferencial, nossa pizzaria é pioneira no sistema
+                  de venda de pizzas sob demanda, ou seja, você assina um plano
+                  e além de comer uma boa pizza também terá bônus e descontos
+                  exclusivos. Então não fique de fora e assine o plano que
+                  melhor te agrada, quer você seja uma pessoa ou uma família, a
+                  Piratas do Karibe tem a melhor opção para você.
+                </p>
+              </div>
+
+              <!-- <div class="card-footer">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </div> -->
+            </div>
+          </div>
         </div>
+        <!--cards-->
       </header>
-      <main>
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Solteiro</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  R$100<small class="text-muted fw-light">/mês</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>4 pizzas por mês</li>
-                  <li>2 refrigerantes por mês</li>
-                  <li>Entrega gratuita</li>
-                  <li>Cancele quando quiser</li>
-                </ul>
-                <a href="#">
-                  <button
-                    type="button"
-                    class="w-100 btn btn-lg btn-outline-primary"
-                  >
-                    Quero esse plano
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm">
-              <div class="card-header py-3">
-                <h4 class="my-0 fw-normal">Casal</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  R$ 150<small class="text-muted fw-light">/mês</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>6 pizzas por mês</li>
-                  <li>4 refrigerantes por mês</li>
-                  <li>Entrega gratuita</li>
-                  <li>Cancele quando quiser</li>
-                </ul>
-                <a href="#">
-                  <button type="button" class="w-100 btn btn-lg btn-primary">
-                    Gostamos desse
-                  </button>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-              <div
-                class="card-header py-3 text-white bg-primary border-primary"
-              >
-                <h4 class="my-0 fw-normal">Familia</h4>
-              </div>
-              <div class="card-body">
-                <h1 class="card-title pricing-card-title">
-                  R$ 200<small class="text-muted fw-light">/mês</small>
-                </h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>8 pizzas por mês</li>
-                  <li>8 refrigerantes por mês</li>
-                  <li>Entrega gratuita</li>
-                  <li>Cancele quando quiser</li>
-                </ul>
-                <button type="button" class="w-100 btn btn-lg btn-primary">
-                  Festa da pizza
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <h2 class="display-6 text-center mb-4">Comparação dos planos</h2>
-
-        <div class="table-responsive">
-          <table class="table text-center">
-            <thead>
-              <tr>
-                <th style="width: 34%"></th>
-                <th style="width: 22%">Solteiro</th>
-                <th style="width: 22%">Casal</th>
-                <th style="width: 22%">Familia</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Entrega gratuita</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Pizzas especiais</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-
-            <tbody>
-              <tr>
-                <th scope="row" class="text-start">Sem fidelidade</th>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row" class="text-start">Promoções exclusivas</th>
-                <td></td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-                <td>
-                  <svg class="bi" width="24" height="24">
-                    <use xlink:href="#check" />
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </main>
 
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
@@ -376,5 +284,7 @@
         </div>
       </footer>
     </div>
+
+    <% if(con!=null)out.print("ok"); %>
   </body>
 </html>
