@@ -102,7 +102,7 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom01"
+            id="inputName"
             value=""
             name="firstname"
             required
@@ -116,7 +116,7 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom02"
+            id="inputLastName"
             value=""
             name="lastname"
             required
@@ -134,7 +134,7 @@ and open the template in the editor.
             <input
               type="text"
               class="form-control"
-              id="validationCustomUsername"
+              id="inputUser"
               aria-describedby="inputGroupPrepend"
               name="user"
               required
@@ -148,7 +148,7 @@ and open the template in the editor.
           <input
             type="password"
             class="form-control"
-            id="validationCustom01"
+            id="inputPassword"
             value=""
             name="password"
             required
@@ -161,7 +161,7 @@ and open the template in the editor.
           <input
             type="email"
             class="form-control"
-            id="validationCustom01"
+            id="inputEmail"
             value=""
             name="email"
             required
@@ -174,7 +174,7 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom03"
+            id="inputAddress"
             name="address"
             required
           />
@@ -186,7 +186,7 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom03"
+            id="inputDistrict"
             name="district"
             required
           />
@@ -198,7 +198,7 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom03"
+            id="inputCity"
             name="city"
             required
           />
@@ -209,7 +209,7 @@ and open the template in the editor.
           <label for="validationCustom04" class="form-label">Estado</label>
           <select
             class="form-select"
-            id="validationCustom04"
+            id="inputState"
             name="state"
             required
           >
@@ -254,11 +254,11 @@ and open the template in the editor.
           <input
             type="text"
             class="form-control"
-            id="validationCustom05"
+            id="inputZipCode"
             name="zipcod"
             required
           />
-          <div class="invalid-feedback">Please provide a valid zip.</div>
+          <div class="invalid-feedback">CEP inválido</div>
         </div>
         <div class="col-12">
           <div class="form-check">
@@ -266,7 +266,7 @@ and open the template in the editor.
               class="form-check-input"
               type="checkbox"
               value=""
-              id="invalidCheck"
+              id="checkTerms"
               required
             />
             <label class="form-check-label" for="invalidCheck">
@@ -278,7 +278,7 @@ and open the template in the editor.
           </div>
         </div>
         <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
+          <button class="btn btn-primary" type="submit" id="btn_submit">Cadastrar</button>
         </div>
       </form>
       <!--form-->

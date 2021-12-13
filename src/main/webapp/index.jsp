@@ -1,7 +1,7 @@
 <%-- Document : solteiro Created on : 21 de out de 2021, 20:53:08 Author :
 fabinho --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%--<%@include file="connectionDBLoc.jsp"%>--%> <%@include
-file="connectionDBWeb.jsp" %>
+<%--<%@include file="connectionDBLoc.jsp"%>--%> 
+<%@include file="connectionDBWeb.jsp" %>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -91,20 +91,17 @@ file="connectionDBWeb.jsp" %>
               href="planos.jsp"
               >Planos</a
             >
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="empresa.html"
-              >Empresa</a
-            >
+            <a class="me-3 py-2 text-dark text-decoration-none" href="empresa.html">Empresa</a>
             <!--                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
                        >Suporte</a
                     >
                     <a class="me-3 py-2 text-dark text-decoration-none" href="#"
                        >Menu</a
                     >-->
-            <a class="py-2 text-dark text-decoration-none" href="cadastro.html"
+            <a class="me-3 py-2 text-dark text-decoration-none" href="cadastro.html"
               >Cadastro</a
             >
+            <a class="py-2 text-dark text-decoration-none" href="login.jsp">Login</a>
           </nav>
         </div>
 

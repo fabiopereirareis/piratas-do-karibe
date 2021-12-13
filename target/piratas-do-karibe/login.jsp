@@ -54,138 +54,72 @@ fabinho --%> <%@page contentType="text/html" pageEncoding="UTF-8"%>
     </svg>
 
     <div class="container py-3">
-      <header>
-        <div
-          class="
+        <header>
+            <div
+                class="
             d-flex
             flex-column flex-md-row
             align-items-center
             pb-3
             mb-4
             border-bottom
-          "
-        >
-          <a
-            href="/"
-            class="d-flex align-items-center text-dark text-decoration-none"
-          >
-            <!--<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>-->
-            <img
-              src="assets/brand/logo_v1.png"
-              alt=""
-              width="150"
-              height="75"
-              class="
+                "
+                >
+                <a
+                    href="/"
+                    class="d-flex align-items-center text-dark text-decoration-none"
+                    >
+                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img"><title>Bootstrap</title><path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z" fill="currentColor"></path></svg>-->
+                    <img
+                        src="assets/brand/logo_v1.png"
+                        alt=""
+                        width="150"
+                        height="75"
+                        class="
                 d-inline-block
                 align-text-top
                 me-3
                 border-end border-bottom
                 rounded
-              "
-            />
-            <span class="fs-4">Piratas do Karibe</span>
-          </a>
-          <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="planos.jsp"
-              >Planos</a
-            >
-            <a
-              class="me-3 py-2 text-dark text-decoration-none"
-              href="empresa.html"
-              >Empresa</a
-            >
-            <!--                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-                       >Suporte</a
+                        "
+                        />
+                    <span class="fs-4">Piratas do Karibe</span>
+                </a>
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a
+                        class="me-3 py-2 text-dark text-decoration-none"
+                        href="planos.jsp"
+                        >Planos</a
                     >
-                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
-                       >Menu</a
-                    >-->
-            <a class="py-2 text-dark text-decoration-none" href="cadastro.html"
-              >Cadastro</a
-            >
-          </nav>
-        </div>
-
-        <!--cards-->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <div class="card h-75">
-              <img
-                src="assets/img/pizza_01.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-                <h5 class="card-title">Pizzaria Temática</h5>
-                <p class="card-text">
-                  Para atender as necessidades de todo o público que são adeptos
-                  de uma boa massa e gostam de experimentar algo novo. Como uma
-                  boa pizzaria com tema temático, num estilo de Piratas algo
-                  totalmente diferente de uma pizzaria habitual com a decoração
-                  colonial e medieval.
-                </p>
-              </div>
-              <!-- <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div> -->
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="empresa.html">Empresa</a>
+                    <!--                    <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+                               >Suporte</a
+                            >
+                            <a class="me-3 py-2 text-dark text-decoration-none" href="#"
+                               >Menu</a
+                            >-->
+                    <a class="me-3 py-2 text-dark text-decoration-none" href="cadastro.html"
+                       >Cadastro</a
+                    >
+                    <a class="py-2 text-dark text-decoration-none" href="login.jsp">Login</a>
+                </nav>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100">
-              <img
-                src="assets/img/franquia.jpg"
-                class="card-img-top"
-                alt="Foto de Arturo Anez no Pexels"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Rede de Franquias</h5>
-                <p class="card-text">
-                  Além da sede própria teremos também as redes dos franqueados,
-                  que contará com todos os requintes da sede própria. Contando
-                  com um ambiente familiar, músicas ao vivo os nossos garçons
-                  com trajes de piratas e buscando o cliente até a mesa para
-                  dançar, ambiente rústico; pizzas saborosas além de outras
-                  especiarias, uma rodada de Rum como cortesia da casa além da
-                  sua imaginação que vai fazer uma viagem aos tempos medievais
-                  dos piratas algo nunca visto antes e inimaginável uma magia
-                  pura.
-                </p>
-              </div>
-              <!-- <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div> -->
+        </header>
+        <!--conteudo-->
+        <form action="validacao_login.jsp" method="post">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-75">
-              <img
-                src="assets/img/planos.jpg"
-                class="card-img-top"
-                alt="Foto de Tima Miroshnichenko no Pexels"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Planos mensais</h5>
-                <p class="card-text">
-                  Como grande diferencial, nossa pizzaria é pioneira no sistema
-                  de venda de pizzas sob demanda, ou seja, você assina um plano
-                  e além de comer uma boa pizza também terá bônus e descontos
-                  exclusivos. Então não fique de fora e assine o plano que
-                  melhor te agrada, quer você seja uma pessoa ou uma família, a
-                  Piratas do Karibe tem a melhor opção para você.
-                </p>
-              </div>
-
-              <!-- <div class="card-footer">
-                            <small class="text-muted">Last updated 3 mins ago</small>
-                        </div> -->
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
             </div>
-          </div>
-        </div>
-        <!--cards-->
-      </header>
-
+            
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <!--conteudo-->
       <footer class="pt-4 my-md-5 pt-md-5 border-top">
         <div class="row">
           <div class="col-12 col-md">
